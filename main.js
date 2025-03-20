@@ -1,6 +1,16 @@
-// Tipos de variaveis
-var a = 5 // escopo global, disponivel  para geral
-let c = "teste" // escopo local só funciona quando é chamada
-const b = 10 // constante sempre vai ser o mesmo valor
+var a =5
+var b = 10
 
+function soma (x,y){
 
+    let sum =x+y
+    return sum
+}
+
+console.log(soma(a,b))
+
+const sub = (a,b) => {
+
+    return 5-3;
+}
+console.log(sub)
