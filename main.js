@@ -1,11 +1,23 @@
-const array = [2,3,4,5,6];//criand array
+/*function Pessoa (a,b){
+    this.nome = a;
+    this.idade = b;
+ }
+ const x = new Pessoa('Afonso', 31)
+ const y = new Pessoa ('Marcos', 20)
+ console.log(x);
+ console.log(y);
+ */
+ 
 
-array.forEach(item =>{//para cada item do array faça (item)
-    if (item % 2 === 0){//se for par...
-    console.log(`O número ${item} é par`);//... faça isso
-    }
-    else{//se não for...
-        console.log(`O número ${item} é ímpar`);//... faça isso
-    }
+ function Carro (a,b,c,d,e){
+    this.modelo = a;
+    this.cor = b;
+     this.ano = c;
+     this.valor = d;
+     this.popular = e;
+ }
+ 
+var carro = new Carro('polo', 'preta', 2025, 80000, true )
 
-});
+ console.log(carro);
+
