@@ -1,12 +1,20 @@
-var lista =['Gustavo', 'Henrique', "Marcos", "Afonso"];
-console.log(lista);
+class Aluno {
+    constructor(nome, nota) {
+        this.nome = nome;
+        this.nota = nota;
+    }
 
-console.log(lista[1]);
+    apresentar() {
+        return `Nome: ${this.nome}, Nota: ${this.nota}`;
+    }
+}
 
-lista.push('Raphinha');
-console.log (lista);
 
-lista.pop();
-console.log(lista);
+let alunos = [];
 
-console.log(lista.length);
+let aluno1 = new Aluno("João", 10);
+let aluno2 = new Aluno("Maria", 7);
+
+alunos.push(aluno1, aluno2);
+
+alunos.forEach(aluno => console.log(aluno.apresentar()));
